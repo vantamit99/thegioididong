@@ -1,0 +1,73 @@
+// > 1024px
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1270px;
+    }
+}
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1270px;
+    }
+}
+@media (max-width: 1366px) {
+    .container {
+        max-width: 1200px;
+    }
+    // header //
+    .header__brand {
+        width: 23%;
+        & > div:last-child input {
+            max-width: 150px;
+        }
+    }
+    .header__menu {
+        width: 67%;
+    }
+}
+@media (max-width: 1270px) {
+    .container {
+        max-width: 1110px;
+    }
+    .header__menu a, 
+    .header__service a {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1150px) {
+    // carbar //
+    .carBar .carousel {
+        width: 73%;
+    }
+    .carBar .sidebar {
+        width: 37%;
+    }
+}
+@media (max-width: 1130px) {   
+    // header //
+    .header__home {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .header__brand {
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0 -15px;
+        padding: 5px 15px;
+
+        & > div:last-child input {
+            max-width: 250px;
+        }
+    }
+    .header__menu {
+        width: 85%;
+    }
+    .header__service {
+        width: auto;
+    }
+    .header__menu a, .header__service a {
+        font-size: 14px;
+    }
+    .header__menu a:first-child {
+        padding-left: 0;
+    }
+}

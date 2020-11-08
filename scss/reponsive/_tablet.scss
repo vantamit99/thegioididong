@@ -1,0 +1,125 @@
+// <= 1024px && > 425px
+@media (max-width: 960px) {
+    // === header === //
+    .header {
+        background-color: #000000;
+        height: 45px;
+    }
+    .header__menu,
+    .header__service {
+        display: none;
+    }
+    
+    .header__home {
+        flex-wrap: nowrap;
+    }
+    .header__brand {
+        width: 360px;
+        justify-content: space-between;
+        margin: 0;
+        & > div:last-child > input {
+            width: 350px;
+        }
+    }
+    // === carousel siderbar === //
+    .carBar {
+        flex-wrap: wrap;
+    }
+    .carBar > .carousel,
+    .carBar > .sidebar {
+        width: 100%;
+        margin-bottom: 40px;
+        height: auto;
+        overflow: unset;      
+    }    
+    .carBar > .sidebar {
+        margin-left: 0;
+    }
+    .sidebar__banner {
+        display: flex;
+        justify-content: center;
+        & > div {
+            margin: 10px 0;
+            & img {
+                height: 100%;
+            }
+        }
+    }
+    // === hot weekend product === // 
+    .product__hotWeekend .product__img img {
+        object-fit: contain;
+    }   
+    .product__news {
+        width: 440px;
+    }
+    .product__list {
+        width: calc(100% - 440px);
+    }
+    .product__news--img {
+        & > img {
+            width: 100%;
+            height: auto;            
+        }
+    }
+    // mobile menu //
+    .mobile__bars {
+        display: block;    
+    }
+    .bars {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        & > button {
+            background-color: #000000;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            & > i {
+                color: #ffffff;
+                font-size: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 870px) {
+    .product__header > ol {
+        display: none;
+    }
+    .product__body {
+        flex-wrap: wrap;
+        & > div {
+            width: 100%;
+        }
+    }
+    .product__news {
+        margin-bottom: 30px;
+    }
+    .product__list {
+        flex-wrap: wrap;
+    }
+    .product__list .product__item {
+        box-sizing: border-box;
+        border: 1px solid #f1e4e4;
+    }
+    // === footer === //
+    .footer__home {
+        flex-wrap: wrap;
+        & > div {
+            width: 100%;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #f1e4e4;
+        }
+        .rules {
+            order: 3;
+        }
+        .about {
+            order: 2;
+        }
+        .hotline {
+            order: 1;
+        }
+        .contact {
+            order: 4;
+        }
+    }
+}

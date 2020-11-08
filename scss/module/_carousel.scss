@@ -1,0 +1,83 @@
+// === chung === //
+.owl-item {
+    overflow: hidden;
+}
+.owl-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+// === rieng === //
+.owl-carousel-page {
+    position: relative;
+}
+.owl-carousel-page .owl-nav {
+    margin-top: 0;
+}
+.owl-carousel-page .owl-nav button.owl-prev,
+.owl-carousel-page .owl-nav button.owl-next {
+    position: absolute;
+    top: calc(50% - 50px);    
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.411);
+    z-index: 4;
+    & span {
+        display: block;
+        color: #ffffff;        
+        font-size: 30px;
+    }
+}
+.owl-carousel-page .owl-nav .owl-prev {
+    left: 20px;
+}
+.owl-carousel-page .owl-nav .owl-next {
+    right: 20px;
+}
+.owl-carousel-page .owl-dots .owl-dot span {
+    display: none;
+}
+.owl-carousel-page .owl-dot::after {
+   font-size: 13px;
+   color: rgba(0, 0, 0, 0.7);
+}
+.owl-carousel-page .owl-dot:first-child::after {
+    content: "Sắm Samsung Galaxy Ưu Đãi 20%";
+}
+.owl-carousel-page .owl-dot:nth-child(2)::after {
+    content: "Đồng Hồ Hotsale Giảm 50%";
+}
+.owl-carousel-page .owl-dot:nth-child(3)::after {
+    content: "Sắm Ngay Iphone Giảm Đến 5 Triệu";
+}
+.owl-carousel-page .owl-dot:nth-child(4)::after {
+    content: "Đặt Trước Sony Nhận Quà Ngon";
+}
+.owl-carousel-page .owl-dot:last-child::after {
+    content: "Realme C3 Giảm Ngay 580.000Đ";
+}
+.owl-carousel-page .owl-dots {
+    display: flex;
+    padding: 5px;   
+    height: 60px;  
+    box-sizing: border-box;  
+    background-color: #ffffff;
+    & button {
+        outline: none;
+    }    
+}
+.owl-carousel-page .owl-dots .owl-dot {
+    width: calc(100% / 5);  
+    border-right: 1px solid #928b8b;  
+    padding: 0 10px !important;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.owl-carousel-page .owl-dots .owl-dot:last-child {
+    border-right: none;
+}
+.owl-carousel-page .owl-dot.active::after {
+    color: #000000;
+ }

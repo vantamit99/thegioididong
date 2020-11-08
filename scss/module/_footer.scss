@@ -1,0 +1,31 @@
+.footer {
+    position: relative;
+    background-color: #ffffff;
+}
+.footer__home {
+    @include layoutFlex(space-between, initial);
+    padding: 15px 0;
+}
+.footer .hotline a {
+    color: #000000;
+    &:hover {
+        color: #808080;
+    }
+}
+.footer .more a {
+    font-weight: 700;
+}
+.footer a:hover {
+    color: #808080;
+}
+.footer__home > div div {
+    margin: 15px 0;
+} 
+.footer .contact a:hover {
+    color: #0d619c;
+}
+.footer .contact .social {    
+    & .fa-youtube-play {
+        color: #ff0000;
+    }
+}

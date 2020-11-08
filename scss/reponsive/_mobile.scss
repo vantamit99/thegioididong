@@ -1,0 +1,30 @@
+// < 425px
+@media (max-width: 425px) {
+    .header__brand {
+        width: 280px;
+    }
+    .header__brand > div:last-child > input {
+        max-width: 260px;
+        width: 100%;
+    }
+    .owl-item img {
+        height: 265px;
+    }
+    .product__body .salePrice.product__salePrice {
+        left: 70%;
+    }
+    .product__list .product__item {
+        width: calc(100% / 2);
+    }
+}
+@media (max-width: 375px) {  
+    .header__brand {
+        width: 230px;
+    }
+    .product__body .salePrice.product__salePrice {
+        left: 60%;
+    }
+    .product__list .product__item {
+        width: 100%;
+    }
+}

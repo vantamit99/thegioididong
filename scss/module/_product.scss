@@ -1,0 +1,209 @@
+// === chung === //
+.section__product {
+    position: relative;
+    background-color: #ffffff;
+    margin: 20px 0;    
+}
+.product__header {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.section__product .owl-theme .owl-nav button span,
+.section__product .owl-theme .owl-dots button span,
+.section__product .owl-theme .owl-dots {
+    display: none;
+}
+.salePrice {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    background: linear-gradient(45deg, rgb(253, 128, 45), rgb(250, 108, 13), rgb(253, 88, 22), rgb(207, 4, 4));
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 0 10px 0 0;
+    color: #ffffff;
+    text-align: right;
+}
+.salePrice::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    background-image: url(./assets/images/product/tiachop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
+}
+.product__body .salePrice.product__salePrice {
+    left: 75%;
+    top: 56%;
+    color: #ffffff;
+}
+.product__body .salePrice {
+    left: 15px;
+}
+.product__body .product__details {
+    position: relative;
+    margin: 0 15px;
+}
+.product__price--new {
+    color: #ff0000;
+    font-size: 15px;
+    font-weight: 600;
+}
+.product__title { 
+    font-size: 15px;
+    color: #000000;
+}
+.product__condition {
+    font-size: 12px;
+}
+.section__product .product__item .product__img img {
+    margin-top: 25px;
+    transition: all 0.4s;
+}
+// hover owl-item //
+.section__product .product__item:hover .product__title {
+    color: #5b5bf8;
+}
+.section__product  .product__item:hover .product__img img {
+    transform: translateY(-15px);
+    transition: all 0.4s;
+}
+
+
+.product__header,
+.product__header > ol {
+    @include layoutFlex(space-between, center);    
+}
+.product__header ol li {
+    margin: 0 10px;
+    & a {
+        font-size: 15px;
+        color: #2626f8;
+    }
+}
+.product__body {
+    display: flex;
+    border-top: 1px solid #f1e4e4;
+    border-bottom: 1px solid #f1e4e4;
+}
+.product__news { 
+    width: 480px;
+    
+    &--img > img{
+        width: 480px;
+        height: 222px;
+        object-fit: cover;
+    }
+}
+.product__details > div {
+    margin: 15px 0;
+    color: #000000;
+}
+.product__list {
+    display: flex;
+    width: calc(100% - 480px);
+}   
+.product__list .product__item {
+    width: calc(100% / 3);
+    border-left: 1px solid #f1e4e4;
+    border-right: 1px solid #f1e4e4;
+}
+.product__list .product__item:nth-child(2) {
+    border-left: none;
+    border-right: none;
+}
+.product__body .product__img {
+    position: relative;
+    height: 180px;
+    width: 100%;
+}
+.product__body .product__img img {
+    display: block;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+} 
+
+
+// === rieng gsct=== //
+.product__hotWeekend {    
+    border: 1px solid #ff0000;
+    padding: 50px 15px 20px 15px;     
+}
+.banner__priceWeekend {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./assets/images/news/gsct.png);
+    background-repeat: no-repeat;
+    width: 309px;
+    height: 38px;
+    background-position: center center;
+    background-size: cover;    
+}
+.product__hotWeekend .product__img {
+    position: relative;
+    height: 180px;
+}
+.product__hotWeekend .product__img img {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}   
+.product__hotWeekend .owl-nav button.owl-prev,
+.product__hotWeekend .owl-nav button.owl-next {
+    position: absolute;
+    top: 90px;    
+    transform: translateY(-50%);
+    width: 35px;
+    height: 80px;    
+    background: #ffffff;
+    box-shadow: 0 1px 5px 1px #c1bfbf;
+    margin: 0;
+    z-index: 4;
+    outline: none;
+    & span {
+        display: block;
+        color: #949292;        
+        font-size: 40px;        
+    }
+}
+.product__hotWeekend .owl-nav button.owl-prev:hover,
+.product__hotWeekend .owl-nav button.owl-next:hover {
+    background: #ffffff;
+    box-shadow: 0 1px 5px 1px #c1bfbf; 
+    & span {       
+        color: #949292;                
+    }
+}
+.product__hotWeekend .owl-nav .owl-prev {
+    left: -15px;   
+}
+.product__hotWeekend .owl-nav .owl-next {
+    right: -15px;
+}
+
+// === rieng dong ho === //
+.section__clock.product__hotWeekend {
+    padding: 0;
+    border: none;
+}
+.section__clock.product__hotWeekend .owl-nav .owl-prev {
+    left: 0;   
+}
+.section__clock.product__hotWeekend .owl-nav .owl-next {
+    right: 0;
+}
